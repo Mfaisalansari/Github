@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="5" name="Failed suite [Suite1]" parallel="methods">
+  <parameter name="fileName" value="TestData\TestData.xlsx"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="wtReportListeners.emailReports"/>
+  </listeners>
+  <test name="suite(failed)" parallel="methods">
+    <parameter name="fileName" value="TestData\TestData.xlsx"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="wtTests.WT_Login">
+        <methods>
+          <include name="TC_2305" invocation-numbers="0"/>
+          <include name="TC_2307" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="TC_2306" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- wtTests.WT_Login -->
+    </classes>
+  </test> <!-- suite(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

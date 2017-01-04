@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+
+ 
+<suite name="Suite1"  verbose="5"  parallel="methods" thread-count="1" >
+<listeners>
+    <listener class-name="wtReportListeners.emailReports"/>
+  </listeners> 
+
+
+  
+ <test name="suite" description="test suite">
+   <parameter name="browser"  value="chrome"/>
+   <parameter name="fileName"  value="TestData\TestData.xlsx"/>
+
+ 
+ 
+<classes>
+<class name="wtTests.WT_Login"/>
+
+</classes>
+
+</test> 
+  
+   
+ 
+  
+</suite>
+ 
